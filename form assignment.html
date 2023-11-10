@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="form design.css" />
+    <script src="jquery-3.7.1.slim.js" type="text/javascript"></script>
+  </head>
+  <style>
+    body {
+      background-image: url("ball2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <h1 style="font-size: 60px; font-family: sans-serif" align="center">
+      Club dé Futbol
+    </h1>
+
+    <p style="font-size: 30px" align="center">
+      Si no eres buena, podemos ayudarte.
+    </p>
+
+    <div class="bound">
+      <h1 style="font-family: sans-serif" align="center">Register:</h1>
+      <input type="text" id="fname" placeholder="First Name" />
+
+      <input type="text" id="lname" placeholder="Last Name" />
+      <br /><br />
+
+      <input
+        type="text"
+        id="matric"
+        placeholder="Matriculation Number"
+        class="tbox"
+      /><br /><br />
+
+      <input
+        type="text"
+        id="room"
+        placeholder="Room Number e.g. DANIEL/H209"
+        class="tbox"
+      /><br /><br />
+
+      <label for="">Gender: </label>
+      <label for="">Male </label>
+      <input type="radio" id="male" />
+      <label for="">Female </label>
+      <input type="radio" id="female" /> <br /><br />
+
+      <label for="">Date of birth</label>
+      <input type="date" id="date" class="tbox" /> <br /><br />
+
+      <label for="">Email Address: </label>
+      <input type="email" id="email" class="tbox" />
+
+      <p>Choose your preferred foot</p>
+
+      <input type="radio" id="lfoot" />
+      <label for="foot">Left</label>
+      <input type="radio" id="rfoot" />
+      <label for="foot">Right</label>
+
+      <p>Choose your preferred position</p>
+      <input type="radio" id="gk" />
+      <label for="">Goalkeeper</label>
+      <input type="radio" id="def" />
+      <label for="">Defender</label>
+      <input type="radio" id="mid" />
+      <label for="">Midfielder</label>
+      <input type="radio" id="fw" />
+      <label for="">Forward</label> <br />
+
+      <p id="note">Note: This is liable to change when you join the club!!</p>
+
+      <input type="submit" id="submit" /> <br /><br />
+
+      <b><a id="changecolor" href="#">a-tag</a></b>
+    </div>
+    <script>
+      $(window).ready(function () {
+        $("#changecolor").click(function () {
+          $("h1").css("color", "red");
+        });
+      });
+    </script>
+  </body>
+</html>
